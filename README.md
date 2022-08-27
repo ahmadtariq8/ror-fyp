@@ -53,8 +53,7 @@ https://www.ruby-lang.org/
 ## Documentation
 
 - [English](https://docs.ruby-lang.org/en/master/index.html)
-- [Japanese](https://docs.ruby-lang.org/ja/master/index.html)
-
+- 
 ## Mailing list
 
 There is a mailing list to discuss Ruby. To subscribe to this list, please
@@ -65,10 +64,6 @@ send the following phrase:
 in the mail body (not subject) to the address [ruby-talk-request@ruby-lang.org].
 
 [ruby-talk-request@ruby-lang.org]: mailto:ruby-talk-request@ruby-lang.org?subject=Join%20Ruby%20Mailing%20List&body=subscribe
-
-## Copying
-
-See the file [COPYING](rdoc-ref:COPYING).
 
 ## Feedback
 
