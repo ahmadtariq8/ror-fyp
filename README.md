@@ -6,7 +6,7 @@
 [![Travis Status](https://app.travis-ci.com/ruby/ruby.svg?branch=master)](https://app.travis-ci.com/ruby/ruby)
 [![Cirrus Status](https://api.cirrus-ci.com/github/ruby/ruby.svg)](https://cirrus-ci.com/github/ruby/ruby/master)
 
-What is Ruby?
+# What is Ruby?
 
 Ruby is an interpreted object-oriented programming language often
 used for web development. It also offers many scripting features
