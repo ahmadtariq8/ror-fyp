@@ -5,11 +5,11 @@ one:
   address: MyString
   price: 1
   rooms: 1
-  bedrooms: 1
+  Bedrooms: 1
 
 two:
   name: MyString
   address: MyString
   price: 1
   rooms: 1
-  bedrooms: 1
+  Bedrooms: 1

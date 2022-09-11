@@ -1,5 +1,10 @@
 class PropertiesController < ApplicationController
-  before_action :set_property, only: %i[ show edit update destroy ]
+  before_action :set_property, only: [:show, :edit, :update, :destroy ]
+  before_action :authenticate_account!, only: [:new, :create, :destroy]
+  # before_action :set_sidebar, except: [:show]
+
+  # before_action :authenticate_user!, :except => [:index]
+  # before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
   # GET /properties or /properties.json
   def index
@@ -8,6 +13,7 @@ class PropertiesController < ApplicationController
 
   # GET /properties/1 or /properties/1.json
   def show
+    # @properties.photo = Photo.find(params[:id])
   end
 
   # GET /properties/new
@@ -22,7 +28,8 @@ class PropertiesController < ApplicationController
   # POST /properties or /properties.json
   def create
     @property = Property.new(property_params)
-
+    @property.account_id = current_account.id
+byebug
     respond_to do |format|
       if @property.save
         format.html { redirect_to property_url(@property), notice: "Property was successfully created." }
@@ -63,8 +70,12 @@ class PropertiesController < ApplicationController
       @property = Property.find(params[:id])
     end
 
+    # def set_sidebar
+    #   @show_sidebar = true
+    # end
+
     # Only allow a list of trusted parameters through.
     def property_params
-      params.require(:property).permit(:name, :address, :price, :rooms, :bedrooms)
+      params.require(:property).permit(:name, :address, :price, :rooms, :bedrooms, :photo, :photo_cache)
     end
 end

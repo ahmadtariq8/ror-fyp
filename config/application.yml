@@ -1,0 +1,5 @@
+# SECRET_KEY_BASE: "fakefakefakefakefakefakefakefakefakefakefakefake"
+AWS_ACCESS_KEY_ID: "AKIARMHIN3JTOYIXODVE"
+AWS_SECRET_ACCESS_KEY: "TWfW0KliNJhDHyq0B0CE3OjE1fvGx0jsdg+ipQwq"
+S3_BUCKET_NAME: "promisedneverland"
+AWS_REGION: "us-east-1"
