@@ -31,7 +31,7 @@ gem 'carrierwave', '~> 2.0'
 gem 'carrierwave-aws'
 # For cloud services
 # gem 'fog', '~> 1.37.0'
-gem 'fog-aws', '~> 3.12'
+gem 'fog-aws', '~> 3.12', group: :production
 # image resizing
 gem 'mini_magick'
 gem 'rmagick'
