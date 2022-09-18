@@ -4,7 +4,7 @@ if Rails.env.staging? || Rails.env.production?
         provider: 'AWS',
         aws_access_key_id:     ENV.fetch('AWS_ACCESS_KEY_ID'),
         aws_secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
-        aws_region:            ENV.fetch('AWS_REGION') # Required
+        region:                ENV.fetch('AWS_REGION') # Required
   }
     config.storage = :fog
     config.cache_dir = "#{Rails.root}/tmp/"
