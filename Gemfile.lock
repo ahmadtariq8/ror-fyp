@@ -284,7 +284,6 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -297,7 +296,7 @@ DEPENDENCIES
   erd
   figaro
   fog-aws (~> 3.12)
-  graphicsmagick (~> 1.0, >= 1.0.6)
+  graphicsmagick
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.2)
