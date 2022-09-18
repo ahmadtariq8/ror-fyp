@@ -29,7 +29,6 @@ class PropertiesController < ApplicationController
   def create
     @property = Property.new(property_params)
     @property.account_id = current_account.id
-byebug
     respond_to do |format|
       if @property.save
         format.html { redirect_to property_url(@property), notice: "Property was successfully created." }
