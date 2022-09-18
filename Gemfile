@@ -34,8 +34,7 @@ gem 'carrierwave-aws'
 gem 'fog-aws', '~> 3.12'
 # image resizing
 gem 'mini_magick'
-gem 'rmagick'
-gem 'graphicsmagick'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -57,6 +56,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'figaro'
   gem 'erd'
+  gem 'rmagick'
+  gem 'graphicsmagick'
 end
 
 group :test do
