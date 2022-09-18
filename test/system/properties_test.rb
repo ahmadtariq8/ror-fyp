@@ -15,7 +15,7 @@ class PropertiesTest < ApplicationSystemTestCase
     click_on "New Property"
 
     fill_in "Address", with: @property.address
-    fill_in "Bedrooms", with: @property.Bedrooms
+    fill_in "Bedrooms", with: @property.bedrooms
     fill_in "Name", with: @property.name
     fill_in "Price", with: @property.price
     fill_in "Rooms", with: @property.rooms
@@ -30,7 +30,7 @@ class PropertiesTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Address", with: @property.address
-    fill_in "Bedrooms", with: @property.Bedrooms
+    fill_in "Bedrooms", with: @property.bedrooms
     fill_in "Name", with: @property.name
     fill_in "Price", with: @property.price
     fill_in "Rooms", with: @property.rooms

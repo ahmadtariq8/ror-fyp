@@ -27,11 +27,10 @@ gem 'devise'
 # for jquery
 gem 'jquery-rails'
 #  Upload Images
-gem 'carrierwave', '~> 2.0'
-gem 'carrierwave-aws'
+gem 'carrierwave'
 # For cloud services
 # gem 'fog', '~> 1.37.0'
-gem 'fog-aws', '~> 3.12'
+gem 'fog-aws' ,group: :production
 # image resizing
 gem 'mini_magick'
 
