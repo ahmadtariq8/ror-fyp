@@ -35,7 +35,7 @@ gem 'fog-aws', '~> 3.12', group: :production
 # image resizing
 gem 'mini_magick'
 gem 'rmagick'
-gem 'graphicsmagick', '~> 1.0', '>= 1.0.6' , require: false
+gem 'graphicsmagick', '~> 1.0', '>= 1.0.6'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
