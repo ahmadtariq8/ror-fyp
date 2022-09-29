@@ -7,4 +7,12 @@ class Account < ApplicationRecord
 
    has_many :properties
 
+def full_name
+  "#{first_name} #{last_name}"
+end
+
+def company
+  "test company"
+end
+
 end

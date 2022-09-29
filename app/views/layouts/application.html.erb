@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Promised Neverland</title>
+    <title>UrbanFinder</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,12 +12,13 @@
 
   </head>
 
-  <body id="<%= controller.controller_name %>" class="<%= controller.action_name %>">
-    <% if ["public","devise","sessions"].include?(controller.controller_name) %>
+  <body id="<%= controller.controller_name %>" class="<%= controller.action_name %> <%= "show-sidebar" if @show_sidebar.present? %>>
+    <% if @show_sidebar.nil? %>
     <header>
       <%= render "layouts/nav/public" %>
-      <%= yield %>
     </header>
+    <%= yield %>
+
     <% else %>
     <%= render "layouts/nav/dashboard" %>
     <div class="container-fluid">
@@ -30,10 +31,6 @@
     </div>
 
     <% end %>
-
-    <!-- <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>    -->
-
 
 <footer>
   <!-- <%= render "layouts/footer" %> -->
